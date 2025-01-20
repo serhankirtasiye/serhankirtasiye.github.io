@@ -1,0 +1,74 @@
+@charset "utf-8";/* CSS Document */
+
+/*Bootstrap Kesme Noktaları*/
+/*    xs: 0,  sm: 576px,  md: 768px,  lg: 992px,  xl: 1200px, xxl: 1400px   */
+
+/* X-Small cihazlar (dikey telefonlar, 576 pikselden küçük) Bootstrap'ta varsayılan olduğundan "xs" için medya sorgusu yok 
+@media (max-width: 575.98px)[`sm` applies to x-small devices (portrait phones, less than 576px) - `sm` x-small cihazlar için geçerlidir (dikey telefonlar, 576 pikselden küçük)]*/
+@include media-breakpoint-only(xs) {}
+
+/* @media (min-width: 576px) [landscape phones, 576px and up - yatay telefonlar, 576px ve üstü] and  
+@media (max-width: 767.98px) [`md` applies to small devices (landscape phones, less than 768px) - "md" küçük cihazlar için geçerlidir (yatay telefonlar, 768 pikselden küçük)]*/
+@include media-breakpoint-only(sm) {}
+
+/* @media (min-width: 768px) [tablets, 768px and up - tabletler, 768 piksel ve üstü] and 
+(max-width: 991.98px) { ... } [`lg` applies to medium devices (tablets, less than 992px) - "lg" orta ölçekli cihazlar için geçerlidir (tabletler, 992 pikselden küçük)]*/
+@include media-breakpoint-only(md) {}
+
+/* @media (min-width: 992px) [desktops, 992px and up - masaüstü bilgisayarlar, 992 piksel ve üstü] and 
+@media (max-width: 1199.98px) [`xl` applies to large devices (desktops, less than 1200px) - "xl" büyük cihazlar için geçerlidir (masaüstü bilgisayarlar, 1200 pikselden küçük)]*/
+@include media-breakpoint-only(lg) {}
+
+/* @media (min-width: 1200px) [large desktops, 1200px and up - büyük masaüstü bilgisayarlar, 1200 piksel ve üstü] and 
+@media (max-width: 1399.98px) [`xxl` applies to x-large devices (large desktops, less than 1400px) - "xxl", x-large cihazlar için geçerlidir (büyük masaüstleri, 1400 pikselden küçük)]*/
+@include media-breakpoint-only(xl) {}
+
+/* @media (min-width: 1400px) [larger desktops, 1400px and up - daha büyük masaüstü bilgisayarlar, 1400 piksel ve üstü] and 
+*/
+@include media-breakpoint-only(xxl) {}
+
+
+.fotograf{
+	height:220px;
+	margin:5px;
+}
+
+a,table tr,td {
+  border:none/*1px solid black*/ !important;
+}
+
+table.gazete {
+  border-collapse:collapse !important;
+  border:none !important;
+  table-layout:auto !important;
+  width:100% !important;  
+}
+/* İletişim Google Harita */
+.map-container-6{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-6 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}/* İletişim Google Harita end */
+
+/* hover efekti */
+body {
+  background-color: #E3F2FD;
+}
+.cards {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.cards:hover {
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  transform: scale(1.1);
+}/* hover efekti end */
+
+/**/

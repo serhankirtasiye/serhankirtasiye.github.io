@@ -1,0 +1,20 @@
+{
+    "name": "Serhan Kırtasiye",
+    "short_name": "Serhan Kırtasiye",
+    "icons": [
+        {
+            "src": "medya/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "medya/favicon/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffc40d",
+    "background_color": "#ffc40d",
+    "start_url": "https://www.serdar.rf.gd/",
+    "display": "standalone"
+}
